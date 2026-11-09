@@ -630,3 +630,79 @@ h3 {
     }
 
 }
+
+/* ACCESSIBLE CONTACT FORM */
+
+.contact-form,
+#contact-form {
+    max-width: 550px;
+    margin: 24px auto;
+    text-align: left;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field label,
+.form-field legend {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #6e5467;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #29212b;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.form-field fieldset,
+fieldset.form-field {
+    padding: 16px;
+    border: 2px solid #6e5467;
+    border-radius: 8px;
+}
+
+fieldset.form-field label {
+    display: block;
+    margin: 8px 0;
+}
+
+.form-field input:focus-visible,
+.form-field textarea:focus-visible,
+#contact-form button:focus-visible {
+    outline: 3px solid #65345a;
+    outline-offset: 3px;
+}
+
+.form-field [aria-invalid="true"] {
+    border-color: #a32139 !important;
+}
+
+.field-error {
+    display: block;
+    margin-top: 5px;
+    color: #89152d;
+    font-weight: bold;
+}
+
+.field-error:empty {
+    display: none;
+}
+
+#contact-form button {
+    cursor: pointer;
+    font: inherit;
+}
+
+#form-status {
+    margin-top: 15px;
+}
