@@ -1,271 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Kaitlyn McGary | About & Contact</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
-
-    <!-- CSS File -->
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <header class="site-header">
-
-        <div class="header-container">
-
-            <a class="logo" href="index.html">
-                Kaitlyn McGary
-            </a>
-
-            <nav aria-label="Main navigation">
-
-                <ul class="nav-list">
-
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="projects.html">
-                            Projects / Work
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                            class="active"
-                            href="about.html"
-                            aria-current="page"
-                        >
-                            About / Contact
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-        </div>
-
-    </header>
-
-
-    <main>
-
-        <!-- PAGE TITLE -->
-        <section class="page-banner">
-
-            <div class="section-container">
-
-                <p class="eyebrow">
-                    Get To Know Me
-                </p>
-
-                <h1>
-                    About Me
-                </h1>
-
-                <p>
-                    A little more about who I am, what I am learning,
-                    and where I hope to go next.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- ABOUT -->
-        <section class="section">
-
-            <div class="section-container">
-
-                <div class="about-layout">
-
-                    <article class="princess-card">
-
-                        <h2>
-                            My Story
-                        </h2>
-
-                        <h3>
-                            Student & Creator
-                        </h3>
-
-                        <p>
-                            My name is Kaitlyn McGary, and I am a student
-                            who enjoys learning new skills and creating
-                            projects that allow me to be both technical
-                            and creative.
-                        </p>
-
-                        <p>
-                            I am currently building my experience with
-                            HTML, CSS, web design, and other technology
-                            skills. This portfolio gives me a place to
-                            document my progress and share the work I
-                            create.
-                        </p>
-
-                    </article>
-
-
-                    <aside class="princess-card">
-
-                        <h2>
-                            A Few Things About Me
-                        </h2>
-
-                        <h3>
-                            Interests & Goals
-                        </h3>
-
-                        <ul class="pretty-list">
-                            <li>Web development</li>
-                            <li>Technology</li>
-                            <li>Education</li>
-                            <li>Creative writing</li>
-                            <li>Learning new digital skills</li>
-                        </ul>
-
-                    </aside>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SKILLS -->
-        <section class="section pink-section">
-
-            <div class="section-container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        What I'm Learning
-                    </p>
-
-                    <h2>
-                        My Skills
-                    </h2>
-
-                </div>
-
-
-                <div class="skills-grid">
-
-                    <article class="skill-card">
-
-                        <h3>
-                            HTML
-                        </h3>
-
-                        <p>
-                            Creating organized webpages using headings,
-                            links, lists, images, and semantic HTML.
-                        </p>
-
-                    </article>
-
-
-                    <article class="skill-card">
-
-                        <h3>
-                            CSS
-                        </h3>
-
-                        <p>
-                            Styling webpages with colors, fonts,
-                            spacing, Flexbox, Grid, and responsive design.
-                        </p>
-
-                    </article>
-
-
-                    <article class="skill-card">
-
-                        <h3>
-                            VS Code
-                        </h3>
-
-                        <p>
-                            Building and organizing website files using
-                            Visual Studio Code.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- CONTACT -->
-        <section id="contact" class="section">
-
-            <div class="section-container">
-
-                <div class="contact-card">
-
-                    <p class="eyebrow">
-                        Say Hello
-                    </p>
-
-                    <h2>
-                        Contact Me
-                    </h2>
-
-                    <h3>
-                        Let's Connect
-                    </h3>
-
-                    <p>
-                        Thanks for visiting my portfolio. You can use the
-                        button below to contact me.
-                    </p>
-                    <a
-                        class="button"
-                        href="mailto:Kaitlynmcgary03@gmail.com"
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <div class="section-container">
+        <div class="contact-card">
+
+            <p class="eyebrow">Say Hello</p>
+            <h2>Contact Me</h2>
+            <h3>Let's Connect</h3>
+
+            <p>
+                Thanks for visiting my portfolio!
+                Fill out the form below to contact me.
+            </p>
+
+            <form id="contact-form" novalidate>
+
+                <!-- NAME -->
+                <div class="form-field">
+                    <label for="contact-name">
+                        Your Name (required)
+                    </label>
+
+                    <input
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        required
+                        autocomplete="name"
+                        aria-describedby="name-error"
                     >
-                        Send Me an Email
-                    </a>
 
+                    <span id="name-error"
+                          class="field-error"
+                          aria-live="polite"></span>
                 </div>
 
-            </div>
+                <!-- EMAIL -->
+                <div class="form-field">
+                    <label for="contact-email">
+                        Email Address (required)
+                    </label>
 
-        </section>
+                    <input
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        required
+                        autocomplete="email"
+                        aria-describedby="email-error"
+                    >
 
-    </main>
+                    <span id="email-error"
+                          class="field-error"
+                          aria-live="polite"></span>
+                </div>
 
+                <!-- REASON FOR CONTACT -->
+                <fieldset class="form-field">
+                    <legend>
+                        Reason for Contacting Me
+                    </legend>
 
-    <footer class="site-footer">
+                    <label>
+                        <input type="radio"
+                               name="reason"
+                               value="Question"
+                               checked>
+                        General Question
+                    </label>
 
-        <p>
-            ♡ Designed and created by Kaitlyn McGary ♡
-        </p>
+                    <label>
+                        <input type="radio"
+                               name="reason"
+                               value="Project">
+                        Project Inquiry
+                    </label>
+                </fieldset>
 
-    </footer>
+                <!-- MESSAGE -->
+                <div class="form-field">
+                    <label for="contact-message">
+                        Your Message (required)
+                    </label>
 
-</body>
-</html>
+                    <textarea
+                        id="contact-message"
+                        name="message"
+                        rows="5"
+                        required
+                        aria-describedby="message-error"
+                    ></textarea>
+
+                    <span id="message-error"
+                          class="field-error"
+                          aria-live="polite"></span>
+                </div>
+
+                <button type="submit" class="button">
+                    Prepare Email
+                </button>
+
+                <p id="form-status" role="status"></p>
+
+            </form>
+        </div>
+    </div>
+</section>
